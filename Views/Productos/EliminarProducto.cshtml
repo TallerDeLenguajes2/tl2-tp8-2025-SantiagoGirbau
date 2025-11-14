@@ -1,0 +1,10 @@
+@model int
+<main>
+    <section class="container shadow rounded text-center">
+        <p class="p-3 h3">¿Seguro que desea borrar el producto de id @Model ?</p>
+        <article  class="p-3">
+            <a class="btn btn-danger" asp-controller="Productos" asp-action="ConfirmarEliminarProducto" asp-route-id="@Model">Confirmar</a> @* Busca el endpoint ConfirmarEliminarProducto y envia el id *@
+            <a class="btn btn-info text-white" asp-controller="Productos" asp-action="Index">Mejor no!</a>
+        </article>
+    </section>
+</main>

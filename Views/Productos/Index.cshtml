@@ -1,24 +1,46 @@
 @model List<Producto>
+
 <body>
-    <div class="container mt-5">
+
+    <main class="container mt-5">
         <h1 class="mb-4">📋 Productos en Stock</h1>
-        
+        <article class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <ul class="navbar-nav flex-grow-1 justify-content-start">
+                <li class="nav-item">
+                    <a class="btn btn-primary" asp-controller="Productos" asp-action="CrearProducto">+ Nuevo
+                        Producto</a>
+                </li>
+
+            </ul>
+        </article>
         <table class="table table-striped table-hover table-bordered">
             <thead class="table-dark">
                 <tr>
 
                     <th scope="col">Descripción</th>
                     <th scope="col">Precio</th>
+
+                    <!-- Aqui debería chequear si es o no admin para mostrar esto -->
+                    <th scope="col" class="col-1">Modificar</th>
+                    <th scope="col" class="col-1">Eliminar</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach(var p in Model){
-                <tr>
-                    <td>@p.Descripcion</td>
-                    <td>@p.Precio</td>
-                </tr>
+                @foreach (var p in Model)
+                {
+                    <tr>
+                        <td>@p.Descripcion</td>
+                        <td>@p.Precio</td>
+                        <!-- Aqui debería chequear si es o no admin para mostrar esto -->
+                        <td>
+                            <a class="btn btn-danger" asp-controller="Productos" asp-action="EliminarProducto" asp-route-id="@p.IdProducto">Borrar</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-info text-white" asp-controller="Productos" asp-action="ModificarProducto" asp-route-id="@p.IdProducto">Modificar</a>
+                        </td>
+                    </tr>
                 }
-                </tbody>
+            </tbody>
         </table>
-    </div>
+    </main>
 </body>
