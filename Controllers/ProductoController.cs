@@ -40,5 +40,18 @@ namespace WebApplication1.Controllers
             var exito = productoRepository.Eliminar(id);  // actua en el repositorio
             return RedirectToAction("Index"); // redirige a la vista de index 
         }
+
+          [HttpGet]
+        public IActionResult ModificarProducto(int id)
+        {
+            var producto = productoRepository.ObtenerDetalle(id);
+            return View(producto); // me lleva a la vista ModificarProducto
+        }
+        [HttpGet]
+        public IActionResult ConfirmarModificarProducto(Producto producto)
+        {
+            var exito = productoRepository.ModificarProducto(producto);  // actua en el repositorio
+            return RedirectToAction("Index"); // redirige a la vista de index 
+        }
     }
 }
