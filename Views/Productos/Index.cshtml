@@ -4,10 +4,11 @@
 
     <main class="container mt-5">
         <h1 class="mb-4">📋 Productos en Stock</h1>
-        <article class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <article
+            class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <ul class="navbar-nav flex-grow-1 justify-content-start">
                 <li class="nav-item">
-                    <a class="btn btn-primary" asp-controller="Productos" asp-action="CrearProducto">+ Nuevo
+                    <a class="btn btn-primary" asp-controller="Productos" asp-action="CrearProducto">+Nuevo
                         Producto</a>
                 </li>
 
@@ -17,12 +18,12 @@
             <thead class="table-dark">
                 <tr>
 
-                    <th scope="col">Descripción</th>
-                    <th scope="col">Precio</th>
+                    <th scope="col" class="col-6 text-center">Descripción</th>
+                    <th scope="col" class="col-1 text-center">Precio (AR$)</th>
 
                     <!-- Aqui debería chequear si es o no admin para mostrar esto -->
-                    <th scope="col" class="col-1">Modificar</th>
-                    <th scope="col" class="col-1">Eliminar</th>
+                    <th scope="col" class="col-1 text-center">📝Editar</th>
+                    <th scope="col" class="col-1 text-center">🗑️Eliminar</th>
                 </tr>
             </thead>
             <tbody>
@@ -30,13 +31,15 @@
                 {
                     <tr>
                         <td>@p.Descripcion</td>
-                        <td>@p.Precio</td>
+                        <td class="text-center">@p.Precio</td>
                         <!-- Aqui debería chequear si es o no admin para mostrar esto -->
-                        <td>
-                            <a class="btn btn-danger" asp-controller="Productos" asp-action="EliminarProducto" asp-route-id="@p.IdProducto">Borrar</a>
+                        <td class="flex-center align-items-center text-center">
+                            <a class="btn btn-danger" asp-controller="Productos" asp-action="EliminarProducto"
+                                asp-route-id="@p.IdProducto">Borrar</a>
                         </td>
-                        <td>
-                            <a class="btn btn-info text-white" asp-controller="Productos" asp-action="ModificarProducto" asp-route-id="@p.IdProducto">Modificar</a>
+                        <td class="flex-center align-items-center text-center">
+                            <a class="btn btn-info text-white" asp-controller="Productos" asp-action="ModificarProducto"
+                                asp-route-id="@p.IdProducto">Modificar</a>
                         </td>
                     </tr>
                 }
