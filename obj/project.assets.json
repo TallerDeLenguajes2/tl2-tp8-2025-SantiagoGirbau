@@ -340,26 +340,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alumno\\.nuget\\packages\\": {}
+    "C:\\Users\\santi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alumno\\Desktop\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj",
+      "projectUniqueName": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj",
       "projectName": "tl2-tp8-2025-SantiagoGirbau",
-      "projectPath": "C:\\Users\\Alumno\\Desktop\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj",
-      "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alumno\\Desktop\\TP8\\tl2-tp8-2025-SantiagoGirbau\\obj\\",
+      "projectPath": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj",
+      "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
+      "outputPath": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -407,7 +405,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

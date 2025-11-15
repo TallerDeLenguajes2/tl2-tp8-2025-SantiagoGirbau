@@ -43,33 +43,26 @@ public class ProductoRepository : IRepository<Producto>
         return listaProductos;
     }
 
-    public bool ModificarProducto(int id, string Descripcion)
+    public bool ModificarProducto(int idProducto,Producto producto)
     {
         using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
         {
-            var queryString = "UPDATE Productos SET Descripcion = @Descripcion WHERE idProducto = @id;";
+            var queryString = "UPDATE Productos SET Descripcion = @Descripcion, Precio = @Precio WHERE idProducto = @id;";
             SqliteCommand command = new SqliteCommand(queryString, connection);
             connection.Open();
-            command.Parameters.Add(new SqliteParameter("@id", id));
-            command.Parameters.Add(new SqliteParameter("@Descripcion", Descripcion));
-
-            if (command.ExecuteNonQuery() == 0)
-            {
-                connection.Close();
-                return false;
-            }
-            else
-            {
-                connection.Close();
-                return true;
-            }
+            command.Parameters.Add(new SqliteParameter("@id", idProducto));
+            command.Parameters.Add(new SqliteParameter("@Descripcion", producto.Descripcion));
+            command.Parameters.Add(new SqliteParameter("@Precio", producto.Precio));
+            var exito = command.ExecuteNonQuery();
+            connection.Close();
+            return exito > 0;
         }
     }
 
     public Producto? ObtenerDetalle(int id)
     {
         var queryString = "SELECT * FROM Productos WHERE idProducto = @id;";
-        Producto ?producto = null;
+        Producto? producto = null;
         using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
         {
             connection.Open();
@@ -80,7 +73,7 @@ public class ProductoRepository : IRepository<Producto>
                 if (reader.Read())
                 {
                     producto = new Producto();
-                    producto.IdProducto = Convert.ToInt32(reader["idProducto"]);
+                    producto.IdProducto = id;
                     producto.Descripcion = reader["Descripcion"].ToString();
                     producto.Precio = Convert.ToDouble(reader["Precio"]);
                 }

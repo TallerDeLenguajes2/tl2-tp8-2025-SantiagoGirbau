@@ -32,7 +32,9 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public IActionResult EliminarProducto(int id)
         {
-            return View(id); // me lleva a la vista EliminarProducto
+            var producto = productoRepository.ObtenerDetalle(id);
+            if (producto == null) return NotFound("no existe el producto");
+            return View(producto); // me lleva a la vista EliminarProducto
         }
         [HttpGet]
         public IActionResult ConfirmarEliminarProducto(int id)
@@ -45,13 +47,16 @@ namespace WebApplication1.Controllers
         public IActionResult ModificarProducto(int id)
         {
             var producto = productoRepository.ObtenerDetalle(id);
+            if (producto == null) return NotFound("no existe el producto");  // actua en el repositorio
             return View(producto); // me lleva a la vista ModificarProducto
         }
-        [HttpGet]
+            [HttpPost]
         public IActionResult ConfirmarModificarProducto(Producto producto)
         {
-            var exito = productoRepository.ModificarProducto(producto);  // actua en el repositorio
+        productoRepository.ModificarProducto(producto.IdProducto, producto);
+            
             return RedirectToAction("Index"); // redirige a la vista de index 
         }
+
     }
 }

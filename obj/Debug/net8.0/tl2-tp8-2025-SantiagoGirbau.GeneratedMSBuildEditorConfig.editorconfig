@@ -9,55 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = tl2_tp8_2025_SantiagoGirbau
 build_property.RootNamespace = tl2_tp8_2025_SantiagoGirbau
-build_property.ProjectDir = C:\Users\Alumno\Desktop\TP8\tl2-tp8-2025-SantiagoGirbau\
+build_property.ProjectDir = D:\SANTIAGOGIRBAU\2doCuat\Taller2\TP8\tl2-tp8-2025-SantiagoGirbau\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Alumno\Desktop\TP8\tl2-tp8-2025-SantiagoGirbau
+build_property.MSBuildProjectDirectory = D:\SANTIAGOGIRBAU\2doCuat\Taller2\TP8\tl2-tp8-2025-SantiagoGirbau
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Alumno/Desktop/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Home/Index.cshtml]
+[D:/SANTIAGOGIRBAU/2doCuat/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alumno/Desktop/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Home/Privacy.cshtml]
+[D:/SANTIAGOGIRBAU/2doCuat/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alumno/Desktop/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Productos/CrearProducto.cshtml]
+[D:/SANTIAGOGIRBAU/2doCuat/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Productos/CrearProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXENyZWFyUHJvZHVjdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alumno/Desktop/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Productos/EliminarProducto.cshtml]
+[D:/SANTIAGOGIRBAU/2doCuat/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Productos/EliminarProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEVsaW1pbmFyUHJvZHVjdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alumno/Desktop/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Productos/Index.cshtml]
+[D:/SANTIAGOGIRBAU/2doCuat/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Productos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alumno/Desktop/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Productos/ModificarProducto.cshtml]
+[D:/SANTIAGOGIRBAU/2doCuat/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Productos/ModificarProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXE1vZGlmaWNhclByb2R1Y3RvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alumno/Desktop/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Shared/Error.cshtml]
+[D:/SANTIAGOGIRBAU/2doCuat/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alumno/Desktop/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/SANTIAGOGIRBAU/2doCuat/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alumno/Desktop/TP8/tl2-tp8-2025-SantiagoGirbau/Views/_ViewImports.cshtml]
+[D:/SANTIAGOGIRBAU/2doCuat/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alumno/Desktop/TP8/tl2-tp8-2025-SantiagoGirbau/Views/_ViewStart.cshtml]
+[D:/SANTIAGOGIRBAU/2doCuat/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alumno/Desktop/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Shared/_Layout.cshtml]
+[D:/SANTIAGOGIRBAU/2doCuat/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-n3x30v68y7
