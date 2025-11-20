@@ -2,10 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 namespace WebApplication1.Controllers
 {
 
-    public class ProductosController : Controller
+    public class ProductoController : Controller
     {
         private ProductoRepository productoRepository;
-        public ProductosController()
+        public ProductoController()
         {
             productoRepository = new ProductoRepository();
         }

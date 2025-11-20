@@ -1,247 +1,247 @@
 {
   "Files": [
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\tl2-tp8-2025-SantiagoGirbau.bundle.scp.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\tl2-tp8-2025-SantiagoGirbau.bundle.scp.css",
       "PackagePath": "staticwebassets\\tl2-tp8-2025-SantiagoGirbau.bundle.scp.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\css\\site.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\favicon.ico",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\js\\site.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

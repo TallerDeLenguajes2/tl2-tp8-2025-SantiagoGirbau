@@ -1,0 +1,50 @@
+@model List<Presupuesto>
+
+<body>
+
+    <main class="container mt-5">
+        <h1 class="mb-4">📋 Presupuestos </h1>
+        <article
+            class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <ul class="navbar-nav flex-grow-1 justify-content-start">
+                <li class="nav-item">
+                    <a class="btn btn-primary" asp-controller="Presupuesto" asp-action="CrearPresupuesto">+Nuevo
+                        Presupuesto</a>
+                </li>
+
+            </ul>
+        </article>
+        <table class="table table-striped table-hover table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col" class="col-6 text-center">Cliente</th>
+
+                    <!-- Aqui debería chequear si es o no admin para mostrar esto -->
+                    <th scope="col" class="col-1 text-center">📝Detalle</th>
+                    <th scope="col" class="col-1 text-center">+Agregar Producto</th>
+                    <th scope="col" class="col-1 text-center">🗑️Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+                {
+                    <tr>
+                        <td colspan=>@p.NombreDestinatario</td>
+                        <td class="flex-center align-items-center text-center">
+                            <a class="btn btn-info text-white" asp-controller="Presupuesto" asp-action="DetallePresupuesto"
+                                asp-route-id="@p.IdPresupuesto">Detalles</a>
+                        </td>
+                         <td class="flex-center align-items-center text-center">
+                            <a class="btn btn-info text-white" asp-controller="Presupuesto" asp-action="AgregarProductoADetalle"
+                                asp-route-id="@p.IdPresupuesto">Agregar</a>
+                        </td>
+                        <td class="flex-center align-items-center text-center">
+                            <a class="btn btn-danger" asp-controller="Presupuesto" asp-action="EliminarPresupuesto"
+                                asp-route-id="@p.IdPresupuesto">Borrar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </main>
+</body>

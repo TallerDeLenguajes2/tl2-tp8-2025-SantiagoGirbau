@@ -19,7 +19,7 @@ public class PresupuestoRepository
             commandPresupuesto.ExecuteNonQuery();
             var obtenerID = new SqliteCommand("SELECT last_insert_rowid();", connection); // Ojo aqui
             long idCreado = (long)obtenerID.ExecuteScalar();
-
+            if (presupuesto.Detalle == null) return;
             foreach (var DetalleProducto in presupuesto.Detalle)
             {
                 var commandDetalle = new SqliteCommand(queryDetalle, connection);
@@ -60,6 +60,31 @@ public class PresupuestoRepository
             connection.Close();
         }
         return listaPresupuesto;
+    }
+
+    public Presupuesto? ObtenerPorId(int id)
+    {
+        Presupuesto presupuesto = null;
+        var queryString = @"SELECT * FROM Presupuestos WHERE idPresupuesto = @id;";
+        using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
+        {
+            connection.Open();
+            SqliteCommand command = new SqliteCommand(queryString, connection);
+            command.Parameters.AddWithValue("@id", id);
+            using (SqliteDataReader reader = command.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    presupuesto = new Presupuesto();
+                    presupuesto.IdPresupuesto = Convert.ToInt32(reader["idPresupuesto"]);
+                    presupuesto.NombreDestinatario = reader["NombreDestinatario"].ToString();
+                    presupuesto.FechaCreacion = Convert.ToDateTime(reader["FechaCreacion"]);
+                    presupuesto.Detalle = ObtenerDetalle(id);
+                }
+            }
+            connection.Close();
+        }
+        return presupuesto;
     }
     public List<PresupuestoDetalle>? ObtenerDetalle(int id)
     {

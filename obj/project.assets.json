@@ -345,11 +345,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj",
+      "projectUniqueName": "A:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj",
       "projectName": "tl2-tp8-2025-SantiagoGirbau",
-      "projectPath": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj",
+      "projectPath": "A:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj",
       "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
-      "outputPath": "D:\\SANTIAGOGIRBAU\\2doCuat\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\obj\\",
+      "outputPath": "A:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config"

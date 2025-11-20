@@ -1,0 +1,39 @@
+@model List<PresupuestoDetalle>
+
+<body>
+
+    <main class="container mt-5">
+        <h1 class="mb-4">📋 Detalle del Presupuesto de: </h1>
+        <article
+            class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        </article>
+
+        <table class="table table-striped table-hover table-bordered">
+            <thead class="table-dark">
+                <tr>
+
+                    <th scope="col" class="col-6 text-center">Descripción</th>
+                    <th scope="col" class="col-1 text-center">Cantiadad</th>
+                    <th scope="col" class="col-1 text-center">Precio (AR$)</th>
+
+                    <!-- Aqui debería chequear si es o no admin para mostrar esto -->
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var d in Model)
+                {
+                    <tr>
+                        <td>@d.Producto.Descripcion</td>
+                        <td class="text-center">@d.Cantidad</td>
+                        <td class="text-center">@d.Producto.Precio</td>
+                        <!-- Aqui debería chequear si es o no admin para mostrar esto -->
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <article class="p-3 text-center">
+            <a class="btn btn-info text-white  col-3" asp-controller="Presupuesto" asp-action="Index">Volver</a>
+        </article>
+    </main>
+</body>

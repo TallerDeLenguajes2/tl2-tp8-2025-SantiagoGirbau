@@ -1,0 +1,27 @@
+@model Presupuesto
+
+<section class="d-flex justify-content-center align-items-center" style="height: 70vh;">
+    <article class="border rounded p-5" style="min-width:420px;">
+        <form asp-controller="Presupuesto" asp-action="CrearPresupuesto" method="post">
+            <section class="form-group p-2">
+                <label asp-for="NombreDestinatario" class="form-label">Nombre destinatario</label>
+                <input asp-for="NombreDestinatario" class="form-control" />
+            </section>
+
+            <section class="form-group p-2">
+                <label asp-for="FechaCreacion" class="form-label">Fecha de creación</label>
+                <input asp-for="FechaCreacion" type="date" class="form-control" />
+            </section>
+
+            <section>
+                <input type="hidden" asp-for="IdPresupuesto" />
+            </section>
+
+            <section class="form-group p-2 d-flex gap-2">
+                <input type="submit" value="Crear presupuesto" class="btn btn-primary" />
+                <a class="btn btn-danger" asp-controller="Presupuesto" asp-action="Index">Cancelar</a>
+            </section>
+        </form>
+        @* Si querés permitir agregar detalle al crear, se puede añadir una sección dinámica de PresupuestoDetalle usando partials o JS para agregar filas *@
+    </article>
+</section>

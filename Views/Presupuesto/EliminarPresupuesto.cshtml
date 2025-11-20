@@ -1,0 +1,10 @@
+@model Presupuesto
+<main>
+    <section class="container shadow rounded text-center col-5 pb-3 pt-3 px-1">
+        <p class="p-3 h3">¿Seguro que desea borrar el presupuesto de @Model.NombreDestinatario?</p>
+        <article  class="p-3">
+            <a class="btn btn-danger" asp-controller="Presupuesto" asp-action="ConfirmarEliminarPresupuesto" asp-route-id="@Model.IdPresupuesto">Confirmar</a> @* Busca el endpoint ConfirmarEliminarProducto y envia el id *@
+            <a class="btn btn-info text-white" asp-controller="Productos" asp-action="Index">Mejor no!</a>
+        </article>
+    </section>
+</main>
