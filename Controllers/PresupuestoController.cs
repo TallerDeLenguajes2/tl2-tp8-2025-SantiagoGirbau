@@ -5,9 +5,11 @@ namespace WebApplication1.Controllers
     public class PresupuestoController : Controller
     {
         private PresupuestoRepository presupuestoRepository;
+        private ProductoRepository productoRepository;
         public PresupuestoController()
         {
             presupuestoRepository = new PresupuestoRepository();
+            productoRepository = new ProductoRepository();
         }
 
         [HttpGet]
@@ -20,8 +22,13 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public IActionResult DetallePresupuesto(int id)
         {
-            List<PresupuestoDetalle> Detalles = presupuestoRepository.ObtenerDetalle(id);
-            return View(Detalles);
+            var DetalleVM = new DetallePresupuestoViewModel();
+            var presupuesto = new Presupuesto();
+            presupuesto = presupuestoRepository.ObtenerPorId(id);
+            DetalleVM.NombreDestinatario = presupuesto.NombreDestinatario;
+            DetalleVM.IdPresupuesto = id;
+            DetalleVM.Detalles = presupuestoRepository.ObtenerDetalle(id);
+            return View(DetalleVM);
         }
 
          [HttpGet]
@@ -54,30 +61,29 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public IActionResult AgregarProductoADetalle(int id)
         {
-            var  Detalle = new PresupuestoDetalle();
-            Detalle.IdPresupuesto = id;
+            var  DetalleVM = new AgregarDetalleViewModel();
             
-            return View(Detalle); // me lleva a la vista AgregarProductoADetalle
+            DetalleVM.TodosLosProductos = productoRepository.Listar();
+            DetalleVM.IdPresupuesto = id;
+            
+            return View(DetalleVM); // me lleva a la vista AgregarProductoADetalle
         }
 
         [HttpPost]
-        public IActionResult AgregarProductoADetalle(PresupuestoDetalle Detalle, int id)
+        public IActionResult AgregarProductoADetalle(AgregarDetalleViewModel DetalleVM)
         {
-            var presupuesto = presupuestoRepository.ObtenerPorId(id);
-            presupuestoRepository.agregarProductoAPresupuesto(Detalle);
-              // hace cosas en el repositorio
-            return RedirectToAction("Index"); // me lleva a la vista AgregarProductoADetalle
+
+            // Armo mi PresupuestoDetalle a partir de lo que tengo de DetalleVM
+            var Detalle = new PresupuestoDetalle();
+            var id = DetalleVM.IdPresupuesto;
+            Detalle.Cantidad=DetalleVM.Cantidad;
+            Detalle.Producto = productoRepository.ObtenerDetalle(DetalleVM.IdProducto);
+
+
+            presupuestoRepository.agregarProductoAPresupuesto(Detalle, id); // hace cosas en el repositorio
+              
+            return RedirectToAction("DetallePresupuesto", new { id }); // me lleva a la vista AgregarProductoADetalle
         }
-
-
-        //     [HttpPost]
-        //  public IActionResult ConfirmarModificarPresupuesto(PresupuestoDetalle DetalleAgregar)
-        //  {
-            
-        //  presupuestoRepository.agregarProductoAPresupuesto;
-            
-        //      return RedirectToAction("Index"); // redirige a la vista de index 
-        //  }
 
     }
 }

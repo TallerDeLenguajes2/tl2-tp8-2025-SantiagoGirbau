@@ -9,79 +9,79 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = tl2_tp8_2025_SantiagoGirbau
 build_property.RootNamespace = tl2_tp8_2025_SantiagoGirbau
-build_property.ProjectDir = A:\Santiago\Facultad\Informática\Tercero\SegundoCuatrimestre\Taller2\TP8\tl2-tp8-2025-SantiagoGirbau\
+build_property.ProjectDir = a:\Santiago\Facultad\Informática\Tercero\SegundoCuatrimestre\Taller2\TP8\tl2-tp8-2025-SantiagoGirbau\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = A:\Santiago\Facultad\Informática\Tercero\SegundoCuatrimestre\Taller2\TP8\tl2-tp8-2025-SantiagoGirbau
+build_property.MSBuildProjectDirectory = a:\Santiago\Facultad\Informática\Tercero\SegundoCuatrimestre\Taller2\TP8\tl2-tp8-2025-SantiagoGirbau
 build_property._RazorSourceGeneratorDebug = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Home/Index.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Home/Privacy.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Presupuesto/AgregarProductoADetalle.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Presupuesto/AgregarProductoADetalle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9cQWdyZWdhclByb2R1Y3RvQURldGFsbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Presupuesto/CrearPresupuesto.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Presupuesto/CrearPresupuesto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9cQ3JlYXJQcmVzdXB1ZXN0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Presupuesto/DetallePresupuesto.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Presupuesto/DetallePresupuesto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9cRGV0YWxsZVByZXN1cHVlc3RvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Presupuesto/EliminarPresupuesto.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Presupuesto/EliminarPresupuesto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9cRWxpbWluYXJQcmVzdXB1ZXN0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Presupuesto/Index.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Presupuesto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Presupuesto/QuitarProducto.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Presupuesto/QuitarProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9cUXVpdGFyUHJvZHVjdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Producto/CrearProducto.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Producto/CrearProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXJQcm9kdWN0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Producto/EliminarProducto.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Producto/EliminarProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWxpbWluYXJQcm9kdWN0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Producto/Index.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Producto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Producto/ModificarProducto.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Producto/ModificarProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cTW9kaWZpY2FyUHJvZHVjdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Shared/Error.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Shared/_ValidationScriptsPartial.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/_ViewImports.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/_ViewStart.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Shared/_Layout.cshtml]
+[a:/Santiago/Facultad/Informática/Tercero/SegundoCuatrimestre/Taller2/TP8/tl2-tp8-2025-SantiagoGirbau/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-n3x30v68y7

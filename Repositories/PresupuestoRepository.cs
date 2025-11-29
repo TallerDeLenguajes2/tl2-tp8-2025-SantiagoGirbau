@@ -105,7 +105,6 @@ public class PresupuestoRepository
                     if (producto != null)
                     {
                         var detalle = new PresupuestoDetalle();
-                        detalle.IdPresupuesto = Convert.ToInt32(reader["idPresupuesto"]);
                         detalle.Cantidad = Convert.ToInt32(reader["Cantidad"]);
                         detalle.Producto = producto;
                         listaDetalles.Add(detalle);
@@ -118,10 +117,9 @@ public class PresupuestoRepository
         return listaDetalles;
     }
 
-    public bool agregarProductoAPresupuesto(PresupuestoDetalle detalle)
+    public bool agregarProductoAPresupuesto(PresupuestoDetalle detalle, int idPresupuesto)
 
     {
-        int idPresupuesto = detalle.IdPresupuesto;
         int idProducto = detalle.Producto.IdProducto;
         int cantidad = detalle.Cantidad;
         var queryString = "INSERT INTO PresupuestosDetalle (IdPresupuesto, IdProducto, Cantidad) VALUES(@IdPresupuesto, @IdProducto, @Cantidad);";

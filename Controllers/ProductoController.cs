@@ -25,6 +25,12 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public IActionResult CrearProducto(ProductoViewModel productoModel)
         {
+
+            if (!ModelState.IsValid)
+            {
+                return View(productoModel);
+            }
+            
             var producto = new Producto
             {
                 Descripcion = productoModel.Descripcion,
