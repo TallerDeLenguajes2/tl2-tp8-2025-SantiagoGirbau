@@ -54,14 +54,18 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public IActionResult AgregarProductoADetalle(int id)
         {
-            return View(id); // me lleva a la vista AgregarProductoADetalle
+            var  Detalle = new PresupuestoDetalle();
+            Detalle.IdPresupuesto = id;
+            
+            return View(Detalle); // me lleva a la vista AgregarProductoADetalle
         }
 
         [HttpPost]
         public IActionResult AgregarProductoADetalle(PresupuestoDetalle Detalle, int id)
         {
             var presupuesto = presupuestoRepository.ObtenerPorId(id);
-            presupuestoRepository.agregarProductoAPresupuesto(id, Detalle.Producto.IdProducto, Detalle.Cantidad);  // hace cosas en el repositorio
+            presupuestoRepository.agregarProductoAPresupuesto(id, Detalle.Producto.IdProducto, Detalle.Cantidad);
+              // hace cosas en el repositorio
             return RedirectToAction("Index"); // me lleva a la vista AgregarProductoADetalle
         }
 

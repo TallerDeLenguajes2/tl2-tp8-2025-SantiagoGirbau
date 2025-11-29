@@ -105,6 +105,7 @@ public class PresupuestoRepository
                     if (producto != null)
                     {
                         var detalle = new PresupuestoDetalle();
+                        detalle.IdPresupuesto = Convert.ToInt32(reader["idPresupuesto"]);
                         detalle.Cantidad = Convert.ToInt32(reader["Cantidad"]);
                         detalle.Producto = producto;
                         listaDetalles.Add(detalle);

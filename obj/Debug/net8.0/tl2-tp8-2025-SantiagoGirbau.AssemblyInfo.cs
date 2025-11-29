@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tl2-tp8-2025-SantiagoGirbau")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97115d82a593d5b343c848af8e1791f55af3dc65")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+211a7a1c9829640dcfb51cf0d3c0873758e5021b")]
 [assembly: System.Reflection.AssemblyProductAttribute("tl2-tp8-2025-SantiagoGirbau")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tl2-tp8-2025-SantiagoGirbau")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

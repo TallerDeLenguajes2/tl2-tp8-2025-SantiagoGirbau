@@ -31,7 +31,7 @@ namespace WebApplication1.Controllers
                 Precio = productoModel.Precio
             };
 
-            productoRepository.Crear(producto);  // actua en el repositorio
+            productoRepository.Crear(producto);  // hace cosas en el repositorio
             return RedirectToAction("Index"); // redirige a la vista de index
         }
 
@@ -45,7 +45,7 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public IActionResult ConfirmarEliminarProducto(int id)
         {
-            var exito = productoRepository.Eliminar(id);  // actua en el repositorio
+            var exito = productoRepository.Eliminar(id);  // hace cosas en el repositorio
             return RedirectToAction("Index"); // redirige a la vista de index 
         }
 
@@ -53,7 +53,7 @@ namespace WebApplication1.Controllers
         public IActionResult ModificarProducto(int id)
         {
             var producto = productoRepository.ObtenerDetalle(id);
-            if (producto == null) return NotFound("no existe el producto");  // actua en el repositorio
+            if (producto == null) return NotFound("no existe el producto");  // hace cosas en el repositorio
             return View(producto); // me lleva a la vista ModificarProducto
         }
             [HttpPost]
