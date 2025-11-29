@@ -127,9 +127,9 @@ public class PresupuestoRepository
             command.Parameters.AddWithValue("@IdPresupuesto", idPresupuesto);
             command.Parameters.AddWithValue("@IdProducto", idProducto);
             command.Parameters.AddWithValue("@Cantidad", cantidad);
-            int chi = command.ExecuteNonQuery(); // guarda si afectó 1 o más fila o devuelve -1 si no.
+            int exito = command.ExecuteNonQuery();
             connection.Close();
-            return chi > 0;
+            return exito > 0;
         }
         }
 
@@ -140,7 +140,8 @@ public class PresupuestoRepository
         using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
         {
             connection.Open();
-            // borro presupuesto detaie
+            // borro presupuesto detalle
+
             SqliteCommand command2 = new SqliteCommand(queryString2, connection);
             command2.Parameters.AddWithValue("@id", id);
             int exito2 = command2.ExecuteNonQuery();

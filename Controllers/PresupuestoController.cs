@@ -33,7 +33,7 @@ namespace WebApplication1.Controllers
 
         public IActionResult CrearPresupuesto(Presupuesto presupuesto)
         {
-            presupuestoRepository.Crear(presupuesto);  // actua en el repositorio
+            presupuestoRepository.Crear(presupuesto);  // hace cosas en el repositorio
             return RedirectToAction("Index"); // redirige a la vista de index
         }
 
@@ -47,11 +47,11 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public IActionResult ConfirmarEliminarPresupuesto(int id)
         {
-            var exito = presupuestoRepository.Eliminar(id);  // actua en el repositorio
+            var exito = presupuestoRepository.Eliminar(id);  // hace cosas en el repositorio
             return RedirectToAction("Index"); // redirige a la vista de index 
         }
 
-          [HttpGet]
+        [HttpGet]
         public IActionResult AgregarProductoADetalle(int id)
         {
             return View(id); // me lleva a la vista AgregarProductoADetalle
@@ -61,7 +61,7 @@ namespace WebApplication1.Controllers
         public IActionResult AgregarProductoADetalle(PresupuestoDetalle Detalle, int id)
         {
             var presupuesto = presupuestoRepository.ObtenerPorId(id);
-            presupuestoRepository.agregarProductoAPresupuesto(id, Detalle.Producto.IdProducto, Detalle.Cantidad);  // actua en el repositorio
+            presupuestoRepository.agregarProductoAPresupuesto(id, Detalle.Producto.IdProducto, Detalle.Cantidad);  // hace cosas en el repositorio
             return RedirectToAction("Index"); // me lleva a la vista AgregarProductoADetalle
         }
 
