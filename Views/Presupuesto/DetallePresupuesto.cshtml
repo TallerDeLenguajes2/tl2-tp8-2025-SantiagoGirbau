@@ -3,9 +3,9 @@
 <body>
 
     <main class="container mt-5">
-        <h1 class="mb-4">📋 Detalle del Presupuesto de: @Model[0].IdPresupuesto</h1>
         <article
             class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <h1 class="mb-4">📋 Detalle del Presupuesto de: @Model[index: 0].IdPresupuesto</h1>
         </article>
 
         <table class="table table-striped table-hover table-bordered">
@@ -30,6 +30,9 @@
 
                     </tr>
                 }
+                <tr class="text-center">
+                    <td class colspan="3"> <a class="btn text-dark col-3" asp-controller="Presupuesto" asp-action="AgregarProductoADetalle" asp-route-id="@Model[index: 0].IdPresupuesto">Agregar + </a> </td>
+                </tr>
             </tbody>
         </table>
         <article class="p-3 text-center">
