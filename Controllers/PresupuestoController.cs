@@ -54,7 +54,7 @@ namespace WebApplication1.Controllers
           [HttpGet]
         public IActionResult AgregarProductoADetalle(int id)
         {
-            return View(); // me lleva a la vista AgregarProductoADetalle
+            return View(id); // me lleva a la vista AgregarProductoADetalle
         }
 
         [HttpPost]

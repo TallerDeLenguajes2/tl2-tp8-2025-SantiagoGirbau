@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj": {}
+    "A:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj": {}
   },
   "projects": {
-    "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj": {
+    "A:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj",
+        "projectUniqueName": "A:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj",
         "projectName": "tl2-tp8-2025-SantiagoGirbau",
-        "projectPath": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj",
+        "projectPath": "A:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\tl2-tp8-2025-SantiagoGirbau.csproj",
         "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
-        "outputPath": "a:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\obj\\",
+        "outputPath": "A:\\Santiago\\Facultad\\Informática\\Tercero\\SegundoCuatrimestre\\Taller2\\TP8\\tl2-tp8-2025-SantiagoGirbau\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config"

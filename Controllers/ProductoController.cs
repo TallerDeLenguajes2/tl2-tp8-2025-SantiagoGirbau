@@ -23,8 +23,14 @@ namespace WebApplication1.Controllers
             return View(); // me lleva a la vista de crearProducto (el formulario)
         }
         [HttpPost]
-        public IActionResult CrearProducto(Producto producto)
+        public IActionResult CrearProducto(ProductoViewModel productoModel)
         {
+            var producto = new Producto
+            {
+                Descripcion = productoModel.Descripcion,
+                Precio = productoModel.Precio
+            };
+
             productoRepository.Crear(producto);  // actua en el repositorio
             return RedirectToAction("Index"); // redirige a la vista de index
         }
@@ -51,8 +57,15 @@ namespace WebApplication1.Controllers
             return View(producto); // me lleva a la vista ModificarProducto
         }
             [HttpPost]
-        public IActionResult ConfirmarModificarProducto(Producto producto)
+        public IActionResult ConfirmarModificarProducto(ProductoViewModel productoModel)
         {
+              var producto = new Producto
+            {
+                IdProducto = productoModel.IdProducto,
+                Descripcion = productoModel.Descripcion,
+                Precio = productoModel.Precio
+            };
+            
         productoRepository.ModificarProducto(producto.IdProducto, producto);
             
             return RedirectToAction("Index"); // redirige a la vista de index 
