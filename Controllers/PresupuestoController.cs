@@ -64,19 +64,20 @@ namespace WebApplication1.Controllers
         public IActionResult AgregarProductoADetalle(PresupuestoDetalle Detalle, int id)
         {
             var presupuesto = presupuestoRepository.ObtenerPorId(id);
-            presupuestoRepository.agregarProductoAPresupuesto(id, Detalle.Producto.IdProducto, Detalle.Cantidad);
+            presupuestoRepository.agregarProductoAPresupuesto(Detalle);
               // hace cosas en el repositorio
             return RedirectToAction("Index"); // me lleva a la vista AgregarProductoADetalle
         }
 
 
-        //    [HttpPost]
-        // public IActionResult ConfirmarModificarPresupuesto(Presupuesto presupuesto)
-        // {
-        // presupuestoRepository.ModificarPresupuesto(presupuesto.IdPresupuesto, presupuesto);
+        //     [HttpPost]
+        //  public IActionResult ConfirmarModificarPresupuesto(PresupuestoDetalle DetalleAgregar)
+        //  {
             
-        //     return RedirectToAction("Index"); // redirige a la vista de index 
-        // }
+        //  presupuestoRepository.agregarProductoAPresupuesto;
+            
+        //      return RedirectToAction("Index"); // redirige a la vista de index 
+        //  }
 
     }
 }

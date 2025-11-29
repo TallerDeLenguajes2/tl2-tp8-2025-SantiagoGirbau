@@ -118,8 +118,12 @@ public class PresupuestoRepository
         return listaDetalles;
     }
 
-    public bool agregarProductoAPresupuesto(int idPresupuesto, int idProducto, int cantidad)
+    public bool agregarProductoAPresupuesto(PresupuestoDetalle detalle)
+
     {
+        int idPresupuesto = detalle.IdPresupuesto;
+        int idProducto = detalle.Producto.IdProducto;
+        int cantidad = detalle.Cantidad;
         var queryString = "INSERT INTO PresupuestosDetalle (IdPresupuesto, IdProducto, Cantidad) VALUES(@IdPresupuesto, @IdProducto, @Cantidad);";
         using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
         {
@@ -132,7 +136,7 @@ public class PresupuestoRepository
             connection.Close();
             return exito > 0;
         }
-        }
+    }
 
     public bool Eliminar(int id)
     {

@@ -2,13 +2,13 @@
 
 <section class="d-flex justify-content-center align-items-center" style="height: 70vh;">
     <article class="border rounded p-5">
-        <form asp-asp-controller="Producto" asp-action="ConfirmarModificarProducto" method="post">
+        <form asp-asp-controller="Producto" asp-action="AgregarProductoADetalle" method="post">
             <section class="form-group p-2">
                 <label asp-for="Producto.IdProducto" class="form-label">idProducto</label>
                 <input type="number" asp-for="Producto.IdProducto" class="form-control-sm">
             </section>
             <section class="form-group d-flex justify-content-between p-2">
-                <label asp-for="Cantidad" class="form-label">Precio</label>
+                <label asp-for="Cantidad" class="form-label">Cantidad</label>
                 <input type="number" asp-for="Cantidad" class="form-control-sm">
             </section>
             <section>
