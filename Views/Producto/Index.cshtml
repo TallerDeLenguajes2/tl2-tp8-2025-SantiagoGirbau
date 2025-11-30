@@ -8,7 +8,7 @@
             class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <ul class="navbar-nav flex-grow-1 justify-content-start">
                 <li class="nav-item">
-                    <a class="btn btn-primary" asp-controller="Producto" asp-action="CrearProducto">+Nuevo
+                    <a class="btn btn-primary" asp-controller="Producto" asp-action="CrearProducto">+ Nuevo
                         Producto</a>
                 </li>
 
@@ -41,8 +41,14 @@
                             <a class="btn btn-danger" asp-controller="Producto" asp-action="EliminarProducto"
                                 asp-route-id="@p.IdProducto">Borrar</a>
                         </td>
+
                     </tr>
                 }
+                    <tr class="text-center">
+                        <td class colspan="4">
+                            <a class="btn text-dark col-12" asp-controller="Producto" asp-action="CrearProducto">Agregar + </a>
+                        </td>
+                    </tr>
             </tbody>
         </table>
     </main>

@@ -4,7 +4,7 @@
         <p class="p-3 h3">¿Seguro que desea borrar el producto @Model.Descripcion?</p>
         <article  class="p-3">
             <a class="btn btn-danger" asp-controller="Producto" asp-action="ConfirmarEliminarProducto" asp-route-id="@Model.IdProducto">Confirmar</a> @* Busca el endpoint ConfirmarEliminarProducto y envia el id *@
-            <a class="btn btn-info text-white" asp-controller="Productos" asp-action="Index">Mejor no!</a>
+            <a class="btn btn-info text-white" asp-controller="Producto" asp-action="Index">Mejor no!</a>
         </article>
     </section>
 </main>

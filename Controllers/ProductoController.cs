@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
+using tl2_tp8_2025_SantiagoGirbau.Interfaces;
+
 namespace WebApplication1.Controllers
 {
 
     public class ProductoController : Controller
     {
-        private ProductoRepository productoRepository;
+        private IProductoRepository productoRepository;
         public ProductoController()
         {
             productoRepository = new ProductoRepository();
@@ -44,14 +46,14 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public IActionResult EliminarProducto(int id)
         {
-            var producto = productoRepository.ObtenerDetalle(id);
+            var producto = productoRepository.ObtenerPorId(id);
             if (producto == null) return NotFound("no existe el producto");
             return View(producto); // me lleva a la vista EliminarProducto
         }
         [HttpGet]
         public IActionResult ConfirmarEliminarProducto(int id)
         {
-            var exito = productoRepository.Eliminar(id);  // hace cosas en el repositorio
+            productoRepository.Eliminar(id);  // hace cosas en el repositorio
             return RedirectToAction("Index"); // redirige a la vista de index 
         }
 
@@ -60,10 +62,10 @@ namespace WebApplication1.Controllers
         {
               if (!ModelState.IsValid)
             {
-                return View();
+                return View(id);
             }
 
-            var producto = productoRepository.ObtenerDetalle(id); // hace cosas en el repositorio
+            var producto = productoRepository.ObtenerPorId(id); // hace cosas en el repositorio
             var productoVM = new ProductoViewModel();
             if (producto == null) return NotFound("no existe el producto");  
 
@@ -83,7 +85,7 @@ namespace WebApplication1.Controllers
                 Precio = productoModel.Precio
             };
             
-        productoRepository.ModificarProducto(producto.IdProducto, producto);
+        productoRepository.Modificar(producto);
             
             return RedirectToAction("Index"); // redirige a la vista de index 
         }

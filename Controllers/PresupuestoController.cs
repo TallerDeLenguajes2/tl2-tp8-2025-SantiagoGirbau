@@ -1,21 +1,23 @@
 using Microsoft.AspNetCore.Mvc;
+using tl2_tp8_2025_SantiagoGirbau.Interfaces;
+
 namespace WebApplication1.Controllers
 {
 
     public class PresupuestoController : Controller
     {
-        private PresupuestoRepository presupuestoRepository;
-        private ProductoRepository productoRepository;
+        private readonly IPresupuestoRepository _presupuestoRepository;
+        private readonly IProductoRepository _productoRepository;
         public PresupuestoController()
         {
-            presupuestoRepository = new PresupuestoRepository();
-            productoRepository = new ProductoRepository();
+            _presupuestoRepository = new PresupuestoRepository();
+            _productoRepository = new ProductoRepository();
         }
 
         [HttpGet]
         public IActionResult Index()
         {
-            List<Presupuesto> presupuestos = presupuestoRepository.Listar();
+            List<Presupuesto> presupuestos = _presupuestoRepository.Listar();
             return View(presupuestos);
         }
 
@@ -24,10 +26,10 @@ namespace WebApplication1.Controllers
         {
             var DetalleVM = new DetallePresupuestoViewModel();
             var presupuesto = new Presupuesto();
-            presupuesto = presupuestoRepository.ObtenerPorId(id);
+            presupuesto = _presupuestoRepository.ObtenerPorId(id);
             DetalleVM.NombreDestinatario = presupuesto.NombreDestinatario;
             DetalleVM.IdPresupuesto = id;
-            DetalleVM.Detalles = presupuestoRepository.ObtenerDetalle(id);
+            DetalleVM.Detalles = _presupuestoRepository.ObtenerDetalle(id);
             return View(DetalleVM);
         }
 
@@ -40,26 +42,38 @@ namespace WebApplication1.Controllers
 
         public IActionResult CrearPresupuesto(PresupuestoViewModel presupuestoVM)
         {
+
+               if (!ModelState.IsValid)
+            {
+                return View(presupuestoVM);
+            }
+
             var presupuesto = new Presupuesto();
             presupuesto.NombreDestinatario = presupuestoVM.NombreDestinatario;
             presupuesto.IdPresupuesto = presupuestoVM.IdPresupuesto;
             presupuesto.FechaCreacion = presupuestoVM.FechaCreacion;
             presupuesto.Detalles = presupuestoVM.Detalles;
-            presupuestoRepository.Crear(presupuesto);  // hace cosas en el repositorio
+
+            _presupuestoRepository.Crear(presupuesto);  // hace cosas en el repositorio
             return RedirectToAction("Index"); // redirige a la vista de index
         }
 
         [HttpGet]
         public IActionResult EliminarPresupuesto(int id)
         {
-            var presupuesto = presupuestoRepository.ObtenerPorId(id);
+            var presupuestoVM = new PresupuestoViewModel();
+            var presupuesto = _presupuestoRepository.ObtenerPorId(id);
+
+            presupuestoVM.Detalles = presupuesto.Detalles;
+            presupuestoVM.IdPresupuesto = presupuesto.IdPresupuesto;
+            presupuestoVM.NombreDestinatario = presupuesto.NombreDestinatario;
             if (presupuesto == null) return NotFound("no existe el presupuesto");
-            return View(presupuesto); // me lleva a la vista EliminarPresupuesto
+            return View(presupuestoVM); // me lleva a la vista EliminarPresupuesto
         }
         [HttpGet]
         public IActionResult ConfirmarEliminarPresupuesto(int id)
         {
-            var exito = presupuestoRepository.Eliminar(id);  // hace cosas en el repositorio
+            _presupuestoRepository.Eliminar(id);  // hace cosas en el repositorio
             return RedirectToAction("Index"); // redirige a la vista de index 
         }
 
@@ -69,9 +83,9 @@ namespace WebApplication1.Controllers
 
             var  DetalleVM = new AgregarDetalleViewModel();
             
-            DetalleVM.TodosLosProductos = productoRepository.Listar();
+            DetalleVM.TodosLosProductos = _productoRepository.Listar();
             DetalleVM.IdPresupuesto = id;
-            DetalleVM.NombreDestinatario = presupuestoRepository.ObtenerPorId(id).NombreDestinatario;
+            DetalleVM.NombreDestinatario = _presupuestoRepository.ObtenerPorId(id).NombreDestinatario;
             
             return View(DetalleVM); // me lleva a la vista AgregarProductoADetalle
         }
@@ -81,7 +95,7 @@ namespace WebApplication1.Controllers
         {
               if (!ModelState.IsValid)
             {
-                DetalleVM.TodosLosProductos = productoRepository.Listar();
+                DetalleVM.TodosLosProductos = _productoRepository.Listar();
                 return View(DetalleVM);
             }
             
@@ -89,10 +103,10 @@ namespace WebApplication1.Controllers
             var Detalle = new PresupuestoDetalle();
             var id = DetalleVM.IdPresupuesto;
             Detalle.Cantidad=DetalleVM.Cantidad;
-            Detalle.Producto = productoRepository.ObtenerDetalle(DetalleVM.IdProducto);
+            Detalle.Producto = _productoRepository.ObtenerPorId(DetalleVM.IdProducto);
 
 
-            presupuestoRepository.agregarProductoAPresupuesto(Detalle, id); // hace cosas en el repositorio
+            _presupuestoRepository.AgregarDetalle(Detalle, id); // hace cosas en el repositorio
               
             return RedirectToAction("DetallePresupuesto", new { id }); // me lleva a la vista AgregarProductoADetalle
         }

@@ -1,6 +1,7 @@
 using Microsoft.Data.Sqlite;
+using tl2_tp8_2025_SantiagoGirbau.Interfaces;
 
-public class PresupuestoRepository
+public class PresupuestoRepository : IPresupuestoRepository
 {
 
     private string cadenaConexion = "Data Source=Tienda_final.db;";
@@ -101,7 +102,7 @@ public class PresupuestoRepository
                 {
                     var productoRep = new ProductoRepository();
                     int idProducto = Convert.ToInt32(reader["idProducto"]);
-                    var producto = productoRep.ObtenerDetalle(idProducto);
+                    var producto = productoRep.ObtenerPorId(idProducto);
                     if (producto != null)
                     {
                         var detalle = new PresupuestoDetalle();
@@ -117,7 +118,22 @@ public class PresupuestoRepository
         return listaDetalles;
     }
 
-    public bool agregarProductoAPresupuesto(PresupuestoDetalle detalle, int idPresupuesto)
+
+    public void Actualizar(Presupuesto presupuesto)
+    {
+        const string sql = "UPDATE Presupuestos SET NombreDestinatario = @NombreDestinatario, FechaCreacion = @FechaCreacion WHERE IdPresupuesto = @Id";
+
+        using var conexion = new SqliteConnection(cadenaConexion);
+        conexion.Open();
+
+        using var comando = new SqliteCommand(sql, conexion);
+        comando.Parameters.AddWithValue("@NombreDestinatario", presupuesto.NombreDestinatario);
+        comando.Parameters.AddWithValue("@FechaCreacion", presupuesto.FechaCreacion);
+        comando.Parameters.AddWithValue("@Id", presupuesto.IdPresupuesto);
+
+        comando.ExecuteNonQuery();
+    }
+    public void AgregarDetalle(PresupuestoDetalle detalle, int idPresupuesto)
 
     {
         int idProducto = detalle.Producto.IdProducto;
@@ -132,11 +148,10 @@ public class PresupuestoRepository
             command.Parameters.AddWithValue("@Cantidad", cantidad);
             int exito = command.ExecuteNonQuery();
             connection.Close();
-            return exito > 0;
         }
     }
 
-    public bool Eliminar(int id)
+    public void Eliminar(int id)
     {
         var queryString = "DELETE FROM Presupuestos WHERE idPresupuesto = @id;";
         var queryString2 = "DELETE FROM PresupuestosDetalle WHERE idPresupuesto = @id;";
@@ -153,7 +168,6 @@ public class PresupuestoRepository
             command.Parameters.AddWithValue("@id", id);
             int exito = command.ExecuteNonQuery();
             connection.Close();
-            return exito > 0;
         }
     }
 

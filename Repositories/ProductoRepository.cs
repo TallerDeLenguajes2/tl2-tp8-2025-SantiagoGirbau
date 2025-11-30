@@ -1,6 +1,7 @@
 using Microsoft.Data.Sqlite;
+using tl2_tp8_2025_SantiagoGirbau.Interfaces;
 
-public class ProductoRepository : IRepository<Producto>
+public class ProductoRepository : IProductoRepository
 {
     private string cadenaConexion = "Data Source=Tienda_final.db;";
     public void Crear(Producto producto)
@@ -43,23 +44,22 @@ public class ProductoRepository : IRepository<Producto>
         return listaProductos;
     }
 
-    public bool ModificarProducto(int idProducto,Producto producto)
+    public void Modificar(Producto producto)
     {
         using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
         {
             var queryString = "UPDATE Productos SET Descripcion = @Descripcion, Precio = @Precio WHERE idProducto = @id;";
             SqliteCommand command = new SqliteCommand(queryString, connection);
             connection.Open();
-            command.Parameters.Add(new SqliteParameter("@id", idProducto));
+            command.Parameters.Add(new SqliteParameter("@id", producto.IdProducto));
             command.Parameters.Add(new SqliteParameter("@Descripcion", producto.Descripcion));
             command.Parameters.Add(new SqliteParameter("@Precio", producto.Precio));
             var exito = command.ExecuteNonQuery();
             connection.Close();
-            return exito > 0;
         }
     }
 
-    public Producto? ObtenerDetalle(int id)
+    public Producto? ObtenerPorId(int id)
     {
         var queryString = "SELECT * FROM Productos WHERE idProducto = @id;";
         Producto? producto = null;
@@ -82,7 +82,7 @@ public class ProductoRepository : IRepository<Producto>
             return producto;
         }
     }
-    public bool Eliminar(int id)
+    public void Eliminar(int id)
     {
         var queryString = "DELETE FROM Productos WHERE idProducto = @id;";
         using (SqliteConnection connection = new SqliteConnection(cadenaConexion))
@@ -90,9 +90,8 @@ public class ProductoRepository : IRepository<Producto>
             connection.Open();
             SqliteCommand command = new SqliteCommand(queryString, connection);
             command.Parameters.AddWithValue("@id", id);
-            int exito = command.ExecuteNonQuery();
+            command.ExecuteNonQuery();
             connection.Close();
-            return exito > 0;
         }
     }
 

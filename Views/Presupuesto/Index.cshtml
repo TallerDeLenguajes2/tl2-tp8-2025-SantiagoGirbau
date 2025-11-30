@@ -8,7 +8,7 @@
             class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <ul class="navbar-nav flex-grow-1 justify-content-start">
                 <li class="nav-item">
-                    <a class="btn btn-primary" asp-controller="Presupuesto" asp-action="CrearPresupuesto">+Nuevo
+                    <a class="btn btn-primary" asp-controller="Presupuesto" asp-action="CrearPresupuesto">+ Nuevo
                         Presupuesto</a>
                 </li>
 
@@ -21,7 +21,7 @@
 
                     <!-- Aqui debería chequear si es o no admin para mostrar esto -->
                     <th scope="col" class="col-1 text-center">📝Detalle</th>
-                    <th scope="col" class="col-1 text-center">+Agregar Producto</th>
+                    <th scope="col" class="col-1 text-center">+ Agregar Producto</th>
                     <th scope="col" class="col-1 text-center">🗑️Eliminar</th>
                 </tr>
             </thead>
@@ -42,8 +42,12 @@
                             <a class="btn btn-danger" asp-controller="Presupuesto" asp-action="EliminarPresupuesto"
                                 asp-route-id="@p.IdPresupuesto">Borrar</a>
                         </td>
+                        
                     </tr>
                 }
+                   <tr class="text-center">
+                    <td class colspan="4"> <a class="btn text-dark col-12" asp-controller="Presupuesto" asp-action="CrearPresupuesto">Agregar + </a> </td>
+                </tr>
             </tbody>
         </table>
     </main>
