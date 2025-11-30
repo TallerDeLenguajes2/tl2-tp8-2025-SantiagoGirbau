@@ -8,10 +8,12 @@ namespace WebApplication1.Controllers
     {
         private readonly IPresupuestoRepository _presupuestoRepository;
         private readonly IProductoRepository _productoRepository;
-        public PresupuestoController()
+        private IAuthenticationService _authService;
+        public PresupuestoController(IPresupuestoRepository IPresRepo, IProductoRepository IProdRepo, IAuthenticationService IAuthServ)
         {
-            _presupuestoRepository = new PresupuestoRepository();
-            _productoRepository = new ProductoRepository();
+            _presupuestoRepository = IPresRepo;
+            _productoRepository = IProdRepo;
+            _authService = IAuthServ;
         }
 
         [HttpGet]
@@ -111,5 +113,9 @@ namespace WebApplication1.Controllers
             return RedirectToAction("DetallePresupuesto", new { id }); // me lleva a la vista AgregarProductoADetalle
         }
 
+        public IActionResult AccesoDenegado()
+        {
+            return View();
+        }
     }
 }
