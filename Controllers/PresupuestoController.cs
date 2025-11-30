@@ -20,9 +20,10 @@ namespace WebApplication1.Controllers
         public IActionResult Index()
         {
             // ZONA DE SEGURIDAD //
-    
+            var securityCheck = CheckClientPermissions();
+            if (securityCheck != null) return securityCheck;
             // FIN ZONA DE SEGURIDAD //
-            
+
             List<Presupuesto> presupuestos = _presupuestoRepository.Listar();
             return View(presupuestos);
         }
@@ -37,6 +38,7 @@ namespace WebApplication1.Controllers
             
             var DetalleVM = new DetallePresupuestoViewModel();
             var presupuesto = new Presupuesto();
+            
             presupuesto = _presupuestoRepository.ObtenerPorId(id);
             DetalleVM.NombreDestinatario = presupuesto.NombreDestinatario;
             DetalleVM.IdPresupuesto = id;
@@ -158,6 +160,26 @@ namespace WebApplication1.Controllers
             {
                 // Llamamos a AccesoDenegado (llama a la vista correspondiente de Productos)
                 return RedirectToAction(nameof(AccesoDenegado));
+            }
+            return null; // Permiso concedido
+        }
+        private IActionResult CheckClientPermissions()
+        {
+
+            // 1. No logueado? -> vuelve al login
+            if (!_authService.IsAuthenticated())
+            {
+                return RedirectToAction("Index", "Login");
+            }
+
+            // 2. No es Administrador? -> Da Error
+            if (!_authService.HasAccessLevel("Administrador"))
+            {
+                // Llamamos a AccesoDenegado (llama a la vista correspondiente de Productos)
+                if (!_authService.HasAccessLevel("Cliente"))
+            {
+                return RedirectToAction(nameof(AccesoDenegado));
+            }
             }
             return null; // Permiso concedido
         }

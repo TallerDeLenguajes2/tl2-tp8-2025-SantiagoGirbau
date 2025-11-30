@@ -1,5 +1,15 @@
 @model List<Presupuesto>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    var isAuthenticated = false;
+    var username = string.Empty;
 
+    if (HttpContextAccessor.HttpContext.Session.GetString("IsAuthenticated") == "true")
+    {
+        isAuthenticated = true;
+        username = HttpContextAccessor.HttpContext.Session.GetString("UserNombre");
+    }
+}
 <body>
 
     <main class="container mt-5">
