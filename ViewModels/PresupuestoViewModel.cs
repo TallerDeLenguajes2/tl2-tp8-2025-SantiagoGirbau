@@ -9,7 +9,7 @@ public class PresupuestoViewModel
 
 
     private DateTime fechaCreacion;
-    private List<PresupuestoDetalle> detalle;
+    private List<PresupuestoDetalle> detalles;
 
     public int IdPresupuesto { get => idPresupuesto; set => idPresupuesto = value; }
 
@@ -21,5 +21,5 @@ public class PresupuestoViewModel
     [Required(ErrorMessage = "La fecha es obligatoria.")]
     [DataType(DataType.Date)]
     public DateTime FechaCreacion { get => fechaCreacion; set => fechaCreacion = value; }
-    public List<PresupuestoDetalle> Detalle { get => detalle; set => detalle = value; }
+    public List<PresupuestoDetalle> Detalles { get => detalles; set => detalles = value; }
 }

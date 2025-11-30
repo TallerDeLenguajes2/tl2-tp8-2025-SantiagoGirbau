@@ -38,8 +38,13 @@ namespace WebApplication1.Controllers
         }
         [HttpPost]
 
-        public IActionResult CrearPresupuesto(Presupuesto presupuesto)
+        public IActionResult CrearPresupuesto(PresupuestoViewModel presupuestoVM)
         {
+            var presupuesto = new Presupuesto();
+            presupuesto.NombreDestinatario = presupuestoVM.NombreDestinatario;
+            presupuesto.IdPresupuesto = presupuestoVM.IdPresupuesto;
+            presupuesto.FechaCreacion = presupuestoVM.FechaCreacion;
+            presupuesto.Detalles = presupuestoVM.Detalles;
             presupuestoRepository.Crear(presupuesto);  // hace cosas en el repositorio
             return RedirectToAction("Index"); // redirige a la vista de index
         }
@@ -61,10 +66,12 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public IActionResult AgregarProductoADetalle(int id)
         {
+
             var  DetalleVM = new AgregarDetalleViewModel();
             
             DetalleVM.TodosLosProductos = productoRepository.Listar();
             DetalleVM.IdPresupuesto = id;
+            DetalleVM.NombreDestinatario = presupuestoRepository.ObtenerPorId(id).NombreDestinatario;
             
             return View(DetalleVM); // me lleva a la vista AgregarProductoADetalle
         }
@@ -72,7 +79,12 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public IActionResult AgregarProductoADetalle(AgregarDetalleViewModel DetalleVM)
         {
-
+              if (!ModelState.IsValid)
+            {
+                DetalleVM.TodosLosProductos = productoRepository.Listar();
+                return View(DetalleVM);
+            }
+            
             // Armo mi PresupuestoDetalle a partir de lo que tengo de DetalleVM
             var Detalle = new PresupuestoDetalle();
             var id = DetalleVM.IdPresupuesto;

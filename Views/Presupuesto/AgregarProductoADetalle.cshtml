@@ -1,7 +1,7 @@
 @model AgregarDetalleViewModel
 
 <article class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-    <h1 class="mb-4">📋 Agregar Producto al Presupuesto: @Model.IdPresupuesto</h1>
+    <h1 class="mb-4">📋 Agregar Producto al Presupuesto: @Model.NombreDestinatario</h1>
 </article>
 
 <section class="d-flex justify-content-center align-items-center" style="height: 70vh;">
@@ -11,19 +11,18 @@
                 <section class="form-group p-2">
                     <label asp-for="IdProducto" class="form-label">Producto</label>
                     <select asp-for="IdProducto" class="form-control" required>
-                        <option value="" disabled selected>Elige un Producto</option>
+                        <option value="0" disabled selected>Elige un Producto</option>
                         @foreach (var p in Model.TodosLosProductos)
                         {
                             <option value="@p.IdProducto">@p.Descripcion</option>
                         }
                     </select>
-
-                    <!--<label asp-for="Producto.IdProducto" class="form-label">idProducto</label>
-                <input type="number" asp-for="Producto.IdProducto" class="form-control-sm">-->
+                    <span asp-validation-for="IdProducto" class="text-danger"></span>
                 </section>
                 <section class="form-group d-flex justify-content-between p-2">
                     <label asp-for="Cantidad" class="form-label">Cantidad</label>
                     <input type="number" asp-for="Cantidad" class="form-control-sm">
+                    <span asp-validation-for="Cantidad" class="text-danger"></span>
                 </section>
                 <section>
                     <input type="hidden" asp-for="IdPresupuesto" value="@Model.IdPresupuesto">
@@ -34,7 +33,9 @@
                         asp-route-id="@Model.IdPresupuesto">Cancelar</a>
                 </section>
         </form>
-
+       @section Scripts {
+            <partial name="_ValidationScriptsPartial" />
+        }
         @*// asp-for conecta los modelos con el formulario, es decir que automaticamente se crea el objeto*@
 
     </article>

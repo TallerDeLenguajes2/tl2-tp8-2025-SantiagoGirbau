@@ -4,6 +4,7 @@ public class AgregarDetalleViewModel
     private List<Producto> todosLosProductos;
     private int idPresupuesto;
     private int cantidad;
+    private string nombreDestinatario;
 
 
     private int idProducto;
@@ -18,4 +19,5 @@ public class AgregarDetalleViewModel
 
     [Display(Name = "Producto a agregar")]
     public int IdProducto { get => idProducto; set => idProducto = value; }
+    public string NombreDestinatario { get => nombreDestinatario; set => nombreDestinatario = value; }
 }

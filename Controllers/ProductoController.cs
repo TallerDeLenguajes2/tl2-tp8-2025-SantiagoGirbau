@@ -30,7 +30,7 @@ namespace WebApplication1.Controllers
             {
                 return View(productoModel);
             }
-            
+
             var producto = new Producto
             {
                 Descripcion = productoModel.Descripcion,
@@ -58,9 +58,20 @@ namespace WebApplication1.Controllers
           [HttpGet]
         public IActionResult ModificarProducto(int id)
         {
-            var producto = productoRepository.ObtenerDetalle(id);
-            if (producto == null) return NotFound("no existe el producto");  // hace cosas en el repositorio
-            return View(producto); // me lleva a la vista ModificarProducto
+              if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            var producto = productoRepository.ObtenerDetalle(id); // hace cosas en el repositorio
+            var productoVM = new ProductoViewModel();
+            if (producto == null) return NotFound("no existe el producto");  
+
+            productoVM.Descripcion = producto.Descripcion;
+            productoVM.IdProducto = producto.IdProducto;
+            productoVM.Precio = producto.Precio;
+
+            return View(productoVM); // me lleva a la vista ModificarProducto
         }
             [HttpPost]
         public IActionResult ConfirmarModificarProducto(ProductoViewModel productoModel)

@@ -34,12 +34,12 @@
                         <td class="text-center">@p.Precio</td>
                         <!-- Aqui debería chequear si es o no admin para mostrar esto -->
                         <td class="flex-center align-items-center text-center">
-                            <a class="btn btn-danger" asp-controller="Producto" asp-action="EliminarProducto"
-                                asp-route-id="@p.IdProducto">Borrar</a>
-                        </td>
-                        <td class="flex-center align-items-center text-center">
                             <a class="btn btn-info text-white" asp-controller="Producto" asp-action="ModificarProducto"
                                 asp-route-id="@p.IdProducto">Modificar</a>
+                        </td>
+                        <td class="flex-center align-items-center text-center">
+                            <a class="btn btn-danger" asp-controller="Producto" asp-action="EliminarProducto"
+                                asp-route-id="@p.IdProducto">Borrar</a>
                         </td>
                     </tr>
                 }

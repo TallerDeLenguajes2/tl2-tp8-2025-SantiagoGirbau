@@ -19,8 +19,8 @@ public class PresupuestoRepository
             commandPresupuesto.ExecuteNonQuery();
             var obtenerID = new SqliteCommand("SELECT last_insert_rowid();", connection); // Ojo aqui
             long idCreado = (long)obtenerID.ExecuteScalar();
-            if (presupuesto.Detalle == null) return;
-            foreach (var DetalleProducto in presupuesto.Detalle)
+            if (presupuesto.Detalles == null) return;
+            foreach (var DetalleProducto in presupuesto.Detalles)
             {
                 var commandDetalle = new SqliteCommand(queryDetalle, connection);
                 commandDetalle.Parameters.AddWithValue("@IdPresupuesto", idCreado);
@@ -52,7 +52,7 @@ public class PresupuestoRepository
                         presupuesto.NombreDestinatario = reader["NombreDestinatario"].ToString();
                         string FechaCreacion = reader["FechaCreacion"].ToString();
                         presupuesto.FechaCreacion = Convert.ToDateTime(reader["FechaCreacion"]);
-                        presupuesto.Detalle = ObtenerDetalle(Convert.ToInt32(reader["idPresupuesto"]));
+                        presupuesto.Detalles = ObtenerDetalle(Convert.ToInt32(reader["idPresupuesto"]));
                         listaPresupuesto.Add(presupuesto);
                     }
                 }
@@ -79,7 +79,7 @@ public class PresupuestoRepository
                     presupuesto.IdPresupuesto = Convert.ToInt32(reader["idPresupuesto"]);
                     presupuesto.NombreDestinatario = reader["NombreDestinatario"].ToString();
                     presupuesto.FechaCreacion = Convert.ToDateTime(reader["FechaCreacion"]);
-                    presupuesto.Detalle = ObtenerDetalle(id);
+                    presupuesto.Detalles = ObtenerDetalle(id);
                 }
             }
             connection.Close();
