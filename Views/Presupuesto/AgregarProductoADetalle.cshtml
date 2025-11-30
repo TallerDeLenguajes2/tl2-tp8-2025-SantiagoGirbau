@@ -10,7 +10,7 @@
             <section class="form-group p-2">
                 <section class="form-group p-2">
                     <label asp-for="IdProducto" class="form-label">Producto</label>
-                    <select asp-for="IdProducto" class="form-control" required>
+                    <select asp-for="IdProducto" class="form-control">
                         <option value="0" disabled selected>Elige un Producto</option>
                         @foreach (var p in Model.TodosLosProductos)
                         {
@@ -19,13 +19,16 @@
                     </select>
                     <span asp-validation-for="IdProducto" class="text-danger"></span>
                 </section>
-                <section class="form-group d-flex justify-content-between p-2">
+                <section class="form-group p-2">
                     <label asp-for="Cantidad" class="form-label">Cantidad</label>
-                    <input type="number" asp-for="Cantidad" class="form-control-sm">
+                    <input type="number" asp-for="Cantidad" class="form-control-sm d-block"> 
                     <span asp-validation-for="Cantidad" class="text-danger"></span>
                 </section>
                 <section>
                     <input type="hidden" asp-for="IdPresupuesto" value="@Model.IdPresupuesto">
+                </section>
+                <section>
+                    <input type="hidden" asp-for="NombreDestinatario" value="@Model.NombreDestinatario">
                 </section>
                 <section class="form-group p-2">
                     <input type="submit" value="Agregar" class="btn btn-primary">
@@ -33,7 +36,7 @@
                         asp-route-id="@Model.IdPresupuesto">Cancelar</a>
                 </section>
         </form>
-       @section Scripts {
+        @section Scripts {
             <partial name="_ValidationScriptsPartial" />
         }
         @*// asp-for conecta los modelos con el formulario, es decir que automaticamente se crea el objeto*@
