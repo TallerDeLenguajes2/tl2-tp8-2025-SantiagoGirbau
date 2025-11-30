@@ -2,7 +2,7 @@
 using tl2_tp8_2025_SantiagoGirbau.Interfaces;
 // aca van mas cosas segun el profe, pero aparentemente no hace tanta falta.
 using tl2_tp8_2025_SantiagoGirbau.Controllers;
-//using tl2_tp8_2025_SantiagoGirbau.Services;
+using Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +18,7 @@ builder.Services.AddSession(options =>
 builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
 builder.Services.AddScoped<IPresupuestoRepository, PresupuestoRepository>();
 builder.Services.AddScoped<IUserRepository, UsuarioRepository>();
-//builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

@@ -1,5 +1,5 @@
 using tl2_tp8_2025_SantiagoGirbau.Interfaces;
-
+namespace Services{
 class AuthenticationService : IAuthenticationService
 {
     private readonly IUserRepository _userRepository;
@@ -67,4 +67,5 @@ class AuthenticationService : IAuthenticationService
        requiredAccessLevel;
     }
 
+}
 }

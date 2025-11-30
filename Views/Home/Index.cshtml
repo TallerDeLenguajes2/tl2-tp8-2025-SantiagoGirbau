@@ -1,8 +1,30 @@
-﻿@{
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    var isAuthenticated = false;
+    var username = string.Empty;
+
+    if (HttpContextAccessor.HttpContext.Session.GetString("IsAuthenticated") == "true")
+    {
+        isAuthenticated = true;
+        username = HttpContextAccessor.HttpContext.Session.GetString("UserNombre");
+    }
+}
+@{
     ViewData["Title"] = "Home Page";
 }
+<Section class="text-center">
+@if (isAuthenticated)
+{
+    <h1 class="display-4">Bienvenido @username</h1>
+    <a class="nav-link" href="@Url.Action("Logout", "Login")">Cerrar sesión</a>
+}
+else
+{
+    
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+        <h1 class="display-4">Bienvenido Invitado</h1>
+        <a class="btn btn-primary text-white" href="@Url.Action("Index", "Login")">Iniciar sesión</a>
+    
+}
+</Section>
